@@ -45,9 +45,9 @@ const EmployeeList = () => {
                 Add Employee
             </button>
         </div>
-        <div className='flex shadow border-b'>
+        <div className='flex shadow border-b mt-4'>
             <table className='min-w-full'>
-                <thead className='bg-gray-50'>
+                <thead className='bg-gray-50 '>
                     <tr>
                         <th className='text-left font-medium text-gray-500 uppercase tracking-wider py-3 px-6'>First Name</th>
                         <th className='text-left font-medium text-gray-500 uppercase tracking-wider py-3 px-6'>Last Name</th>
@@ -56,7 +56,7 @@ const EmployeeList = () => {
                     </tr>
                 </thead>
                 {!loading && (
-                    <tbody className='bg-white'> 
+                    <tbody className='bg-white '> 
                     {employees.map((employee)=> (
                         <Employee 
                         employee={employee} 
